@@ -4,6 +4,11 @@ import { CategoryGrid } from "@/components/category-grid"
 import { BestSellingCourses } from "@/components/best-selling-courses"
 import { FeaturedCourses } from "@/components/featured-courses"
 import { RecentCourses } from "@/components/recent-courses"
+import { BecomeInstructor } from "@/components/become-instructor"
+import { TopInstructors } from "@/components/top-instructors"
+import { TrustedCompanies } from "@/components/trusted-companies"
+import { StatsSection } from "@/components/stats-section"
+import { SiteFooter } from "@/components/site-footer"
 
 export default function Home() {
   return (
@@ -15,7 +20,12 @@ export default function Home() {
         <BestSellingCourses />
         <FeaturedCourses />
         <RecentCourses />
+        <BecomeInstructor />
+        <TopInstructors />
+        <TrustedCompanies />
+        <StatsSection />
       </main>
+      <SiteFooter />
     </div>
   )
 }
