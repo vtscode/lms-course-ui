@@ -82,6 +82,7 @@ const mockCourse: Course = {
 
 export default function CoursePage({ params }: { params: { slug: string } }) {
   // In a real app, fetch course data based on slug
+  console.log(params); // Example of using params
   const course = mockCourse
 
   return (

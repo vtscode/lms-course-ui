@@ -1,3 +1,4 @@
+"use client";
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Star, Users } from 'lucide-react'

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Star, Share2, Heart, Award, Globe, Clock, BarChart } from 'lucide-react'
+import { Star, Share2, Heart, Award, Globe, Clock } from 'lucide-react'
 import Image from "next/image"
 import type { Course } from "@/types/course"
 
