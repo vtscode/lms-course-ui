@@ -26,7 +26,7 @@ export function CourseCard({
   featured = false
 }: CourseCardProps) {
   return (
-    <Link href={`/course/${title.toLowerCase().replace(/ /g, "-")}`}>
+    <Link href={`/courses/${title.toLowerCase().replace(/ /g, "-")}`}>
       <Card className={`h-full hover:shadow-lg transition-shadow ${featured ? 'border-2 border-primary' : ''}`}>
         <div className="relative aspect-video">
           <Image

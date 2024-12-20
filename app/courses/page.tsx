@@ -25,7 +25,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
       <main className="flex-1">
         <div className="container py-8">
           <h1 className="text-2xl font-bold mb-8">
-            Best selling courses in {decodeURIComponent(params.slug).replace(/-/g, ' ')}
+            Best selling courses 
           </h1>
           
           <div className="grid gap-8">
