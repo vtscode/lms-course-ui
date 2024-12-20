@@ -46,7 +46,7 @@ export function CourseFilters() {
         </div>
       </div>
       <div className="text-sm text-muted-foreground">
-        $10,000 results for "UX/UI design"
+        $10,000 results for &quot;UX/UI design&quot;
       </div>
     </div>
   )
