@@ -22,7 +22,7 @@ const mockCourse: Course = {
       id: "1",
       name: "John Smith",
       title: "Senior UX Designer",
-      image: "/placeholder.svg",
+      image: "/placeholder.svg?height=64&width=64",
       rating: 4.9,
       students: 50000,
       courses: 12,
@@ -56,7 +56,7 @@ const mockCourse: Course = {
       id: "1",
       user: {
         name: "Alice Johnson",
-        image: "/placeholder.svg"
+        image: "/placeholder.svg?height=40&width=40"
       },
       rating: 5,
       date: "1 week ago",
@@ -71,18 +71,14 @@ const mockCourse: Course = {
       price: 89.99,
       rating: 4.7,
       students: 8500,
-      image: "/placeholder.svg"
+      image: "/placeholder.svg?height=200&width=300"
     }
   ]
 }
 
-// export default function CourseDetail({ params }: { params: { slug: string } }) {
-//   return <>Title: {decodeURIComponent(params.slug).replace(/-/g, ' ')}</>
-// }
-
 export default function CoursePage({ params }: { params: { slug: string } }) {
+  console.log(params)
   // In a real app, fetch course data based on slug
-  console.log(params); // Example of using params
   const course = mockCourse
 
   return (
@@ -90,14 +86,15 @@ export default function CoursePage({ params }: { params: { slug: string } }) {
       <SiteHeader />
       <main className="flex-1">
         <CourseHeader course={course} />
-        <div className="container py-8">
-          <div className="grid lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-2 space-y-8">
+        <div className="container px-4 py-8 md:py-12">
+          <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
+            <div className="lg:col-span-2 space-y-8 md:space-y-12">
               <CourseContent course={course} />
               <CourseReviews course={course} />
             </div>
+            {/* Sidebar content can be added here if needed */}
           </div>
-          <section className="mt-16">
+          <section className="mt-12 md:mt-16 lg:mt-20">
             <RelatedCourses courses={course.relatedCourses} />
           </section>
         </div>
@@ -106,3 +103,4 @@ export default function CoursePage({ params }: { params: { slug: string } }) {
     </div>
   )
 }
+
