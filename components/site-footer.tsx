@@ -51,14 +51,14 @@ export function SiteFooter() {
             <div className="space-y-2">
               <a href="#" className="block">
                 <img 
-                  src="/placeholder.svg?height=40&width=120" 
+                  src="/placeholder.svg" 
                   alt="Download on App Store" 
                   className="h-10"
                 />
               </a>
               <a href="#" className="block">
                 <img 
-                  src="/placeholder.svg?height=40&width=120" 
+                  src="/placeholder.svg" 
                   alt="Get it on Google Play" 
                   className="h-10"
                 />

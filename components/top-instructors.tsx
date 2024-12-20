@@ -16,35 +16,35 @@ const instructors: Instructor[] = [
     title: "UX Designer",
     rating: 4.8,
     students: 45600,
-    image: "/placeholder.svg?height=200&width=200"
+    image: "/placeholder.svg"
   },
   {
     name: "Derek Mitchell",
     title: "Software Engineer",
     rating: 4.9,
     students: 38200,
-    image: "/placeholder.svg?height=200&width=200"
+    image: "/placeholder.svg"
   },
   {
     name: "Jane Knight",
     title: "Product Manager",
     rating: 4.7,
     students: 42300,
-    image: "/placeholder.svg?height=200&width=200"
+    image: "/placeholder.svg"
   },
   {
     name: "Albert Morris",
     title: "Data Scientist",
     rating: 4.9,
     students: 39700,
-    image: "/placeholder.svg?height=200&width=200"
+    image: "/placeholder.svg"
   },
   {
     name: "Kelvin Murphy",
     title: "Marketing Expert",
     rating: 4.8,
     students: 35200,
-    image: "/placeholder.svg?height=200&width=200"
+    image: "/placeholder.svg"
   }
 ]
 

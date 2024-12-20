@@ -1,3 +1,4 @@
+"use client";
 import { useState } from 'react'
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
@@ -19,7 +20,7 @@ const courses = Array(12).fill(null).map((_, i) => ({
   price: 94.99,
   rating: 4.8,
   students: 12500 + i * 100,
-  image: "/placeholder.svg?height=200&width=300",
+  image: "/placeholder.svg",
   duration: "52 hours"
 }))
 

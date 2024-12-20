@@ -1,13 +1,13 @@
 export function TrustedCompanies() {
   const companies = [
-    { name: "Netflix", logo: "/placeholder.svg?height=40&width=120" },
-    { name: "YouTube", logo: "/placeholder.svg?height=40&width=120" },
-    { name: "Google", logo: "/placeholder.svg?height=40&width=120" },
-    { name: "Lenovo", logo: "/placeholder.svg?height=40&width=120" },
-    { name: "Slack", logo: "/placeholder.svg?height=40&width=120" },
-    { name: "Verizon", logo: "/placeholder.svg?height=40&width=120" },
-    { name: "Microsoft", logo: "/placeholder.svg?height=40&width=120" },
-    { name: "Samsung", logo: "/placeholder.svg?height=40&width=120" }
+    { name: "Netflix", logo: "/placeholder.svg" },
+    { name: "YouTube", logo: "/placeholder.svg" },
+    { name: "Google", logo: "/placeholder.svg" },
+    { name: "Lenovo", logo: "/placeholder.svg" },
+    { name: "Slack", logo: "/placeholder.svg" },
+    { name: "Verizon", logo: "/placeholder.svg" },
+    { name: "Microsoft", logo: "/placeholder.svg" },
+    { name: "Samsung", logo: "/placeholder.svg" }
   ]
 
   return (
