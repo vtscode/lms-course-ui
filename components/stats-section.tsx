@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export function StatsSection() {
   return (
@@ -13,9 +14,11 @@ export function StatsSection() {
               <Button variant="default" className="bg-[#ff5722] hover:bg-[#f4511e]">
                 Get Started
               </Button>
-              <Button variant="outline" className="text-white border-white hover:bg-white/10">
-                Browse All Courses
-              </Button>
+              <Link href={`/courses`}>
+                <Button variant="outline" className="bg-white/10 text-white hover:text-[#baacaa] border-white hover:bg-white/10">
+                  Browse All Courses
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="grid grid-cols-3 gap-8 text-center">
