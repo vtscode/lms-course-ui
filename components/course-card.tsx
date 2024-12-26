@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Star, Users } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
+import { formNum } from "@/lib/utils";
 
 interface CourseCardProps {
   title: string
@@ -47,7 +48,7 @@ export function CourseCard({
             </div>
             <div className="flex items-center">
               <Users className="w-4 h-4 mr-1" />
-              <span>{students.toLocaleString()} students</span>
+              <span>{formNum(students).toString()} students</span>
             </div>
             {duration && <span>{duration}</span>}
           </div>

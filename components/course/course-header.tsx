@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card"
 import { Star, Share2, Heart, Award, Globe, Clock, BarChart } from 'lucide-react'
 import Image from "next/image"
 import type { Course } from "@/types/course"
+import { formNum } from "@/lib/utils"
 
 interface CourseHeaderProps {
   course: Course
@@ -45,7 +46,7 @@ export function CourseHeader({ course }: CourseHeaderProps) {
                 <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                 <span className="ml-1 font-medium">{course.rating}</span>
                 <span className="ml-1 text-muted-foreground hidden sm:inline">
-                  ({course.students.toLocaleString()} students)
+                  ({formNum(course.students).toString()} students)
                 </span>
               </div>
               <div className="flex items-center gap-1">
