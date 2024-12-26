@@ -57,7 +57,9 @@ export function SiteHeaderComponent() {
             <Button variant="ghost" size="icon">
               <ShoppingCart className="h-5 w-5" />
             </Button>
-            <Button variant="default">Sign in</Button>
+            <Link href="/login">
+              <Button variant="default">Sign in</Button>
+            </Link>
           </nav>
         </div>
       </div>

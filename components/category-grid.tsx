@@ -73,7 +73,7 @@ export function CategoryGrid() {
         {categories.map((category) => {
           const Icon = category.icon
           return (
-            <Link href={`/category/${category.title.toLowerCase()}`} key={category.title}>
+            <Link href={`/category/${encodeURIComponent(category.title.toLowerCase())}`} key={category.title}>
               <Card className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-4">
                   <div className={`w-12 h-12 rounded-lg ${category.color} flex items-center justify-center mb-4`}>

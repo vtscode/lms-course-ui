@@ -4,6 +4,7 @@ import { Star, Share2, Heart, Award, Globe, Clock, BarChart } from 'lucide-react
 import Image from "next/image"
 import type { Course } from "@/types/course"
 import { formNum } from "@/lib/utils"
+import Link from "next/link"
 
 interface CourseHeaderProps {
   course: Course
@@ -112,8 +113,11 @@ export function CourseHeader({ course }: CourseHeaderProps) {
               <Button variant="ghost" size="icon">
                 <Share2 className="w-5 h-5" />
               </Button>
+              
               <Button variant="ghost" size="icon">
-                <Award className="w-5 h-5" />
+                <Link href={`/giftcourses/${encodeURIComponent(course.title.toLowerCase().replace(/ /g, "-"))}`} key={course.title}>
+                  <Award className="w-5 h-5" />
+                </Link>
               </Button>
             </div>
           </Card>
