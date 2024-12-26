@@ -1,7 +1,6 @@
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { Breadcrumb } from "@/components/ui/breadcrumb"
-import { Button } from "@/components/ui/button"
 import { CareerHero } from "@/components/career/career-hero"
 import { WhyJoinUs } from "@/components/career/why-join-us"
 import { PerksAndBenefits } from "@/components/career/perks-and-benefits"

@@ -17,7 +17,7 @@ export function Gallery() {
         <div className="space-y-2">
           <div className="text-orange-600 font-medium">OUR GALLERY</div>
           <h2 className="text-3xl font-bold">
-            We've been here almost 17 years
+            We&apos;ve been here almost 17 years
           </h2>
           <p className="text-muted-foreground max-w-2xl">
             Fusce volutpat ante augue, sit amet tristique nisi commodo in. 
