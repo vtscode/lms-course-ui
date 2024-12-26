@@ -22,7 +22,7 @@ const mockCourse: Course = {
       id: "1",
       name: "John Smith",
       title: "Senior UX Designer",
-      image: "/placeholder.svg?height=64&width=64",
+      image: "/placeholder.svg",
       rating: 4.9,
       students: 50000,
       courses: 12,
@@ -56,7 +56,7 @@ const mockCourse: Course = {
       id: "1",
       user: {
         name: "Alice Johnson",
-        image: "/placeholder.svg?height=40&width=40"
+        image: "/placeholder.svg"
       },
       rating: 5,
       date: "1 week ago",
@@ -71,7 +71,7 @@ const mockCourse: Course = {
       price: 89.99,
       rating: 4.7,
       students: 8500,
-      image: "/placeholder.svg?height=200&width=300"
+      image: "/placeholder.svg"
     }
   ]
 }
