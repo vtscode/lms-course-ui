@@ -40,8 +40,8 @@ export function SiteFooter() {
           <div>
             <h3 className="font-semibold mb-4">QUICK LINKS</h3>
             <ul className="space-y-2 text-white/60">
-              <li><Link href="#" className="hover:text-white">About</Link></li>
-              <li><Link href="#" className="hover:text-white">Careers</Link></li>
+              <li><Link href="/about" className="hover:text-white">About</Link></li>
+              <li><Link href="/career" className="hover:text-white">Careers</Link></li>
               <li><Link href="#" className="hover:text-white">Blog</Link></li>
               <li><Link href="#" className="hover:text-white">Privacy Policy</Link></li>
             </ul>
