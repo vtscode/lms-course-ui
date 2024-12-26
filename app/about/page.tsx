@@ -142,7 +142,7 @@ export default function AboutPage() {
                     Our one billion mission sounds bold, We agree.
                   </h2>
                   <p className="text-muted-foreground">
-                    "We cannot solve our problems with the same thinking we used when we created them." —Albert Einstein. Institutions are slow to change. We're impatient learners. Let's do this. Choose agility over dogma. Embrace and drive change. We need to wipe the slate clean and begin with bold, radical thinking.
+                  &quot;We cannot solve our problems with the same thinking we used when we created them.&quot; —Albert Einstein. Institutions are slow to change. We&apos;re impatient learners. Let&apos;s do this. Choose agility over dogma. Embrace and drive change. We need to wipe the slate clean and begin with bold, radical thinking.
                   </p>
                 </div>
               </div>
@@ -156,7 +156,7 @@ export default function AboutPage() {
               <div className="flex justify-between items-end">
                 <div className="space-y-2">
                   <h2 className="text-3xl font-bold">
-                    We've been here almost 17 years
+                    We&apos;ve been here almost 17 years
                   </h2>
                   <p className="text-muted-foreground max-w-2xl">
                     Fusce volutpat ante augue, sit amet tristique nisi commodo in. Aliquam ac lectus quis tellus venenatis imperdiet.
@@ -187,7 +187,7 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-3 gap-8">
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="bg-slate-50 p-6 rounded-lg space-y-4">
-                  <div className="text-4xl text-orange-600">"</div>
+                  <div className="text-4xl text-orange-600">&quot;</div>
                   <p className="text-lg">{testimonial.quote}</p>
                   <div>
                     <div className="font-semibold">{testimonial.author}</div>
