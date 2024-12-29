@@ -7,7 +7,7 @@ const testimonial = {
   role: "UI/UX Design Instructor"
 }
 
-const instructors = Array(9).fill(null).map((_, i) => ({
+const instructors = Array(9).fill(null).map(() => ({
   image: `/placeholder.svg`
 }))
 
