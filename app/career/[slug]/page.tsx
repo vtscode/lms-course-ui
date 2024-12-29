@@ -51,6 +51,8 @@ const jobData = {
 }
 
 export default function CareerDetailPage({ params }: { params: { slug: string } }) {
+  console.log(params);
+
   return (
     <div className="relative flex min-h-screen flex-col">
       <SiteHeader />
