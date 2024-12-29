@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { MapPin, DollarSign, Clock } from 'lucide-react'
+import Link from "next/link"
 
 const positions = [
   {
@@ -68,7 +69,9 @@ export function OpenPositions() {
                   <span className="text-muted-foreground">Deadline: </span>
                   {position.deadline}
                 </div>
-                <Button variant="outline">Apply Now</Button>
+                <Link href={`/career/${encodeURIComponent(position.title)}`}>
+                  <Button variant="outline">Apply Now</Button>
+                </Link>
               </div>
             </div>
           </div>
