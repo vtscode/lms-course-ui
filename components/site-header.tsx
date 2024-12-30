@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { ShoppingCart, Bell, Menu, X, Search } from 'lucide-react'
+import { ShoppingCart, Bell, Menu, Search } from 'lucide-react'
 import { useRouter, useSearchParams } from "next/navigation"
 import { useState } from "react"
 import {
