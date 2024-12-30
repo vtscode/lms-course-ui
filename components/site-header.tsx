@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ShoppingCart, Bell, Menu, Search } from 'lucide-react'
 import { useRouter, useSearchParams } from "next/navigation"
-import { useState } from "react"
+import { Suspense, useState } from "react"
 import {
   Sheet,
   SheetContent,
@@ -14,7 +14,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 
-export function SiteHeader() {
+function SiteHeaderComp() {
   const router = useRouter()
   const searchParams = useSearchParams()
   const [searchQuery, setSearchQuery] = useState(searchParams.get('q') || '')
@@ -145,3 +145,8 @@ export function SiteHeader() {
   )
 }
 
+export const SiteHeader = () => {
+  return <Suspense fallback="Loading...">
+    <SiteHeaderComp />
+  </Suspense>
+};
