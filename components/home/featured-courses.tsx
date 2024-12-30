@@ -1,4 +1,4 @@
-import { CourseCard } from "./course-card"
+import { CourseCard } from "@/components/course-card"
 
 export function FeaturedCourses() {
   const courses = [

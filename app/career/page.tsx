@@ -5,7 +5,7 @@ import { CareerHero } from "@/components/career/career-hero"
 import { WhyJoinUs } from "@/components/career/why-join-us"
 import { PerksAndBenefits } from "@/components/career/perks-and-benefits"
 import { Gallery } from "@/components/career/gallery"
-import { TrustedCompanies } from "@/components/trusted-companies"
+import { TrustedCompanies } from "@/components/home/trusted-companies"
 import { OpenPositions } from "@/components/career/open-positions"
 import Link from "next/link"
 
