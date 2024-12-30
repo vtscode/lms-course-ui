@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className="relative flex min-h-screen flex-col">
       <SiteHeader />
-      <main className="flex-1">
+      <main className="flex-1 mx-2">
         <HeroSection />
         <CategoryGrid />
         <BestSellingCourses />

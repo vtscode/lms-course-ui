@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export function StatsSection() {
   return (
-    <section className="bg-slate-900 text-white py-16">
+    <section className="bg-slate-900 text-white py-16 -mx-[0.5rem]">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-4">
