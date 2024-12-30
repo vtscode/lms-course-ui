@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { ShoppingCart, Bell, Menu, Search } from 'lucide-react'
+import { ShoppingCart, Bell, Menu, X, Search, Heart, ChevronDown } from 'lucide-react'
 import { useRouter, useSearchParams } from "next/navigation"
 import { Suspense, useState } from "react"
 import {
@@ -13,6 +13,15 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 function SiteHeaderComp() {
   const router = useRouter()
@@ -84,6 +93,13 @@ function SiteHeaderComp() {
                 {item.label}
               </Link>
             ))}
+            <Button
+              variant="ghost"
+              className="hidden md:flex items-center gap-2"
+            >
+              Browse
+              <ChevronDown className="h-4 w-4" />
+            </Button>
           </nav>
         </div>
 
@@ -115,15 +131,44 @@ function SiteHeaderComp() {
           <nav className="flex items-center space-x-2">
             <Button variant="ghost" size="icon">
               <Bell className="h-5 w-5" />
+              <span className="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-red-500 text-[10px] font-medium text-white flex items-center justify-center">
+                3
+              </span>
               <span className="sr-only">Notifications</span>
             </Button>
             <Button variant="ghost" size="icon">
+              <Heart className="h-5 w-5" />
+              <span className="sr-only">Wishlist</span>
+            </Button>
+            <Button variant="ghost" size="icon">
               <ShoppingCart className="h-5 w-5" />
+              <span className="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-red-500 text-[10px] font-medium text-white flex items-center justify-center">
+                2
+              </span>
               <span className="sr-only">Cart</span>
             </Button>
-            <Link href="/login">
-              <Button variant="default">Sign in</Button>
-            </Link>
+            {/* User Profile Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon" className="relative h-8 w-8 rounded-full">
+                  <Avatar className="h-8 w-8">
+                    <AvatarImage src="/placeholder.svg" alt="User" />
+                    <AvatarFallback>U</AvatarFallback>
+                  </Avatar>
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem>Profile</DropdownMenuItem>
+                <DropdownMenuItem>My Learning</DropdownMenuItem>
+                <DropdownMenuItem>My Cart</DropdownMenuItem>
+                <DropdownMenuItem>Wishlist</DropdownMenuItem>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem>Settings</DropdownMenuItem>
+                <DropdownMenuItem>Log out</DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </nav>
         </div>
       </div>
